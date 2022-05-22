@@ -83,12 +83,12 @@ def process_image(image):
 input_video = "./test_videos/test_video.mp4"
 output_video = './output_videos/test_video.mp4'
 
-PYTHONFILE = False
+PYTHONFILE = True
 if PYTHONFILE and len(sys.argv) > 1:
     input_video = sys.argv[1]
     output_video = "output_videos/" + input_video.split("/")[-1]
 
-debug = True
+debug = False
 if PYTHONFILE and len(sys.argv) > 2 and sys.argv[2] == "debug":
     debug = True
 
